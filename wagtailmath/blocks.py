@@ -1,7 +1,7 @@
 from django.utils.safestring import mark_safe
 from django.template.loader import render_to_string
 from django.forms import Widget, CharField
-from wagtail.wagtailcore.blocks import FieldBlock
+from wagtail.core.blocks import FieldBlock
 
 class MathJaxWidget(Widget):
     template_name = "wagtailmath/mathjaxwidget.html"
@@ -38,8 +38,5 @@ class MathBlock(FieldBlock):
         super(MathBlock, self).__init__(**kwargs)
 
     def value_from_form(self, value):
-        print(value)
         return value
-
-
-    
+ 
