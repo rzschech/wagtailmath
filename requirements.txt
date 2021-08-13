@@ -1,3 +1,2 @@
 
 # Additional requirements go here
-wagtail>=1.7,<2.3
